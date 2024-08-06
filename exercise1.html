@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <title>Exercise 1</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #title{
+        background-color: #9999ff;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #box{
+        margin: 150px 600px;
+        border: 1px white;
+         
+    }
+    #textline{
+        background-color: black;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: medium;
+        padding: 1px;
+    }
+    #form_box{
+        background-color: #0d3300;
+        color: white;
+    }
+    #form_text{
+        font-size: small;
+        display: inline;
+    }
+
+    #inpt{
+        margin: 20px;
+        width: 50%;
+        padding: 10px;
+        align-items: baseline;
+    }
+</style>
+<body>
+    <div id="box">
+        <div id="title">DEVELOPERS SURVEY FORM</h1>
+        <div id="textline">Thank you for taking the time to help us know the about world wide developers</div>
+
+        <form id="form_box">
+            <div id="form_text">
+                <label for="name">Name :- </label>
+                <input id="inpt" type="name" placeholder="name">
+            </div><br>
+            <div id="form_text">
+                <label for="email">Email :- </label>
+                <input id="inpt" type="email" placeholder="email">
+            </div><br>
+            <div id="form_text">
+                <label for="age">Age :- </label>
+                <input id="inpt" type="age" placeholder="age">
+            </div><br>
+            <div id="form_text">
+                <label for="nationality">Nationality :- </label>
+                <select name="subject" id="subject">
+                    <option value="" selected="selected">Indian</option>
+                    <option value="" >Sri Lankan</option>
+                </select>
+            </div><br>
+            <div id="form_text">
+                <label for="nationality">Developer :- </label>
+                <input type="radio" id="frontend" name="developer" value="Frontend">
+                <label for="html">Frontend</label>
+                <input type="radio" id="backend" name="developer" value="Backend">
+                <label for="html">Backend</label>
+                <input type="radio" id="fullstack" name="developer" value="Fullstack">
+                <label for="html">Fullstack</label>
+            </div><br>
+            <div id="form_text">
+                <label for="nationality">Qualification :- </label>
+                <input type="checkbox" id="year" name="Qualification" value="year">
+                <label for="html">10+2</label>
+                <input type="checkbox" id="graduation" name="Qualification" value="graduation">
+                <label for="html">Graduation</label>
+                <input type="checkbox" id="degree" name="Qualification" value="degree">
+                <label for="html">Degree</label>
+            </div><br>
+        </form>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>This is my web page</header>
+    <h1>Hello</h1>
+
+    <!-- image-->
+    <img src="https://thumbs.dreamstime.com/b/beautiful-happy-reddish-havanese-puppy-dog-sitting-frontal-looking-camera-isolated-white-background-46868560.jpg" height="300px" width="300px"/>
+
+     <!-- unorderd list-->
+     <ul>
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Bird</li>
+     </ul>
+
+     <!-- orderd list-->
+     <ol>
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Bird</li>
+     </ul>
+     <br><br>
+
+     <!--Canvas to showing images-->
+     <h1>Canvas</h1>
+     <canvas id="myCanvas" width="200" height="200" style="border: 1px solid #000000;"> Your canvas is not support the html canvas tag</canvas>
+     <br><br>
+
+     <!--SVG - Circle-->
+     <h1>SVG</h1>
+     <svg width="100" height="100" > 
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+        Your bowser is not support the html svg tag
+    </svg>
+
+    <!--SVG - Rectangle-->
+    <svg width="400" height="120" > 
+        <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+        Your bowser is not support the html svg tag
+    </svg>
+
+    <!--SVG - Square-->
+    <svg width="400" height="180" > 
+        <rect x="50" y="10" rx="20" ry="20" width="150" height="150" style="fill:red; stroke:black; stroke-width:5; opacity:0.5;"/>
+        Your bowser is not support the html svg tag
+    </svg>
+
+    <!--SVG - Rectangle-->
+    <svg width="400" height="180" > 
+        <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        Your bowser is not support the html svg tag
+    </svg>
+
+    <br><br>
+    <!--Table-->
+    <h1>Table</h1>
+    <div>
+        <table style="border: 1;">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td> Amalya</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td> Amalya</td>
+                <td>25</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <!--Form-->
+    <h1>Form</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+    
+      <br><br>
+      <!--GeoLocation-->
+      <button onclick="getLocation()">Get Location</button>
+      <p id="demo"></p>
+
+    <footer>
+        <p>Author: Amalya Dayarathna <br>
+            <a href="amalyadayarathna@gmail.com">Contact me</a>
+        </p>
+        
+    </footer>
+
+    <script>
+        const x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+</body>
+</html>

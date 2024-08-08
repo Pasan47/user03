@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: palegoldenrod;
+      }
+      .box {
+        background-color: lightpink;
+        height: 900px;
+        padding-inline-start: 700px;
+        padding-block-start: 300px;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
+
+      .para {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      .box  .icons{
+        display: flex;
+        justify-content: space-around;
+      }
+      .box .footer{
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="card">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/026/829/465/small_2x/beautiful-girl-with-autumn-leaves-photo.jpg"
+          alt="Avatar"
+          style="width: 100%"
+        />
+        <div class="container">
+          <h2>About</h2>
+          <p class="para">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. 
+          </p>
+          <h2>Contact</h2>
+        </div>
+        <div class="icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a> 
+        </div>
+        <hr>
+        <footer class="footer">
+            <div>
+                by : <i>Jean Estevez</i>
+            </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

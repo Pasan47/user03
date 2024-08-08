@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind BG Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-blue-500">Blue background</div>
+    <div class="bg-red-300/50">Red background with 50% opacity</div>
+    <div class="bg-gradient-to-r from-green-400 to-blue-500">
+      Gradient from green to blue
+    </div>
+    <!-- Width and height-->
+    <div class="w-full h-screen bg-gray-100 flex items-center justify-center">
+      <div class="bg-blue-500 p-4 rounded-lg">
+        <div class="w-1/2 h-1/2 bg-red-400"></div>
+        <div class="min-w-full min-h-screen bg-green-300"></div>
+        <div class="max-w-screen-lg max-h-96 bg-yellow-200"></div>
+      </div>
+    </div>
+    <!--  Padding & Margin -->
+    <div class="p-4">This div has padding of 1rem on all sides.</div>
+
+    <div class="mx-8">This div has margin of 2rem on left and right.</div>
+
+    <div class="py-2">This div has padding of 0.5rem on top and bottom.</div>
+
+    <div class="mt-6 mb-4">
+      This div has margin of 1.5rem on top and 1rem on bottom.
+    </div>
+
+    <div class="px-4 -my-2">
+      This div has padding of 1rem on left and right, and negative margin of
+      0.5rem on top and bottom.
+    </div>
+
+    <div class="p-[20px]">
+      This div has arbitrary padding of 20px on all sides.
+    </div>
+    <!-- Typography-->
+
+    <h1 class="text-3xl font-bold text-center">Hello, Tailwind!</h1>
+    <p class="text-lg text-gray-500">
+      This is a paragraph with different styles.
+    </p>
+    <div class="text-right italic font-light">Right-aligned italic text.</div>
+    <span class="text-sm tracking-wider"
+      >Small text with wider letter spacing.</span
+    >
+    <div class="leading-loose">Loose line height.</div>
+    <!-- Positioning -->
+
+    <div class="relative bg-blue-500 w-48 h-48">
+      <div class="absolute top-0 left-0 bg-red-500 w-24 h-24"></div>
+      <div class="absolute bottom-0 right-0 bg-green-500 w-24 h-24"></div>
+    </div>
+
+    <div class="float-left bg-yellow-500 w-32 h-32"></div>
+    <div class="float-right bg-purple-500 w-32 h-32"></div>
+
+    <div class="hidden">This element is hidden</div>
+    <div class="z-50 bg-orange-500 w-32 h-32">This element is on top</div>
+
+    <!-- Flex -->
+
+    <div class="flex flex-row flex-wrap justify-center items-center">
+      <div class="bg-blue-500 text-white p-4 flex-grow order-2">Item 1</div>
+      <div class="bg-green-500 text-white p-4 flex-grow order-1">Item 2</div>
+      <div class="bg-red-500 text-white p-4 flex-shrink-0">Item 3</div>
+    </div>
+
+    <!-- Grid -->
+
+    <div class="container mx-auto grid grid-cols-3 gap-4">
+      <div class="bg-blue-500 h-24">Column 1</div>
+      <div class="bg-green-500 h-24">Column 2</div>
+      <div class="bg-yellow-500 h-24">Column 3</div>
+
+      <div class="col-span-2 bg-red-500 h-24">Spanning 2 columns</div>
+
+      <div class="grid grid-rows-2 gap-4">
+        <div class="bg-purple-500 h-24">Row 1</div>
+        <div class="bg-pink-500 h-24">Row 2</div>
+      </div>
+
+      <div class="row-span-2 bg-orange-500">Spanning 2 rows</div>
+
+      <div class="grid grid-cols-2 gap-8">
+        <div class="bg-gray-500 h-24">Item 1</div>
+        <div class="bg-gray-500 h-24">Item 2</div>
+      </div>
+    </div>
+
+    <!-- Borders-->
+    <div class="border border-blue-500 border-solid rounded-md">
+      This element has a blue border, solid style, medium width, and rounded
+      corners.
+    </div>
+    <div class="border-2 border-red-400 border-dashed rounded-full">
+      This element has a red border, dashed style, double width, and full circle
+      radius.
+    </div>
+    <div class="border-t-4 border-green-300">
+      This element has a top border only, green color, and thick width.
+    </div>
+
+    <!-- Shadow-->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <div class="bg-white p-4 rounded-lg shadow-lg opacity-90 drop-shadow-md">
+        This element has a box shadow, opacity, and a drop shadow.
+      </div>
+    </div>
+    <!-- Transforms & interactivity-->
+
+    <div
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Hover me
+    </div>
+
+    <div class="rotate-45">Rotated element</div>
+
+    <div class="translate-x-10">Translated element</div>
+
+    <div class="skew-x-12">Skewed element</div>
+
+    <div class="cursor-pointer">Click me</div>
+
+    <div class="focus:ring-2 focus:ring-blue-500">Focus me</div>
+  </body>
+</html>

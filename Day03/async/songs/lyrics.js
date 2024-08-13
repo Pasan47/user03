@@ -43,6 +43,6 @@ function showLyrics(lyricsText) {
 }
 
 const result = document.getElementById('result');
-const lyrics = document.getElementById('lyrics');
+//const lyrics = document.getElementById('lyrics');
 
 result.appendChild(data);

@@ -1,5 +1,6 @@
 import './App.css'
 import React, { Component } from 'react'
+import Page from './Page.jsx';
 
 export default class App extends Component {
 
@@ -29,12 +30,15 @@ export default class App extends Component {
     console.log("Component will unmount");
   }
 
+  
+
   render() {
     return (
       <div className='App'>
         <header className='App-header'>
           <p>{this.state.message}</p>
           <button onClick={this.handleClick}>Click me</button>
+          <Page name = {"Amalya"}/>
         </header>
       </div>
     );

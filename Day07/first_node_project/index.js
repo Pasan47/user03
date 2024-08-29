@@ -19,3 +19,5 @@ const course = "fullstack";
 module.exports.message = message;
 module.exports.course = course;
 console.log(module); //? Giving the output as this -> exports: { message: 'august', course: 'fullstack' }, 
+
+//console.log(module.exports.course); //? Giving as fullstack

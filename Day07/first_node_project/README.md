@@ -5,3 +5,4 @@
     3. fs
     4. tmp
     5. event
+    6. http

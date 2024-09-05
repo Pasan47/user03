@@ -141,8 +141,39 @@
   {
     $match: {
       tags: {
-        $all: ["ad", "id"],
+        $all: ["ad", "id"], // And
       },
     },
   },
 ]
+
+## 8 --> get the docs age > 30
+[
+  {
+    $match: {
+      age: { $gt: 30 },
+    },
+  },
+]
+
+## 9 
+[
+  {
+    $match: {
+      tags: {
+        $all: ["ad", "id"], // AND
+      },
+      age: { $gt: 30 },
+      eyeColor: {
+        $in: ["brown", "blue"], //OR
+      },
+    },
+  },
+  {
+    $project: {
+      eyeColor: 1,
+    },
+  },
+]
+
+## 10

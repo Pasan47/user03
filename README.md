@@ -1,12 +1,12 @@
 # git hub
 
-### Add the change from the working directory to staging area
+#### Add the change from the working directory to staging area
 git add
 
-### Pass from staging area to local repository
+#### Pass from staging area to local repository
 git commit -m (msg)
 
-### Push to the remote branch
+#### Push to the remote branch
 git push origin main
 
 ##### In here we have to make a pull request to request to merge changes to main branch
@@ -14,7 +14,7 @@ git push origin main
 ### Get the latest code from the remote branch
 git pull
 
-### create branch
+### Create branch
 git branch day02
  
 

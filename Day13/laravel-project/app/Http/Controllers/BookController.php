@@ -7,7 +7,7 @@ use App\Models\Book;
 
 class BookController extends Controller
 {
-    //? Create API
+    //? Create API --> Book
 
 
     public function index(){

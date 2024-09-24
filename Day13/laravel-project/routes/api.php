@@ -30,3 +30,6 @@ Route::put('/books/editBook/{id}', [BookController::class, 'edit']);
 //OrderController Routes
 Route::get('/orders', [OrderController::class, 'index']);
 Route::post('/orders/addOrder', [OrderController::class, 'create']);
+Route::get('/orders/showOrder/{id}', [OrderController::class, 'show']);
+Route::delete('/orders/deleteOrder/{id}', [OrderController::class, 'distroy']);
+Route::put('/orders/editOrder/{id}', [OrderController::class, 'edit']);

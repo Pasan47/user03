@@ -7,7 +7,7 @@ use App\Models\Book;
 
 class BookController extends Controller
 {
-    //? Create API
+    //? Create API --> Book
 
 
     public function index(){
@@ -57,5 +57,6 @@ class BookController extends Controller
         $book->delete();
         return response() ->json(["message"=>"Book Deleted"],201);
     }
+
 
 }
